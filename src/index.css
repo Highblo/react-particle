@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -12,4 +13,21 @@ html, body {
   width: 100vw;
   height: 100vh;
   background-color: black;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header span {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4158d0, #c850c0 30%, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
