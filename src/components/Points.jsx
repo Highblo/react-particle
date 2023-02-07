@@ -64,7 +64,7 @@ export const Points = () => {
       <pointsMaterial
         attach="material"
         map={img}
-        color={0x00aaff}
+        color="violet"
         size={0.5}
         sizeAttenuation
         transparent={false}

@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Cloud, OrbitControls, Sky, Stars } from "@react-three/drei";
 
 import { Points } from "./Points";
 
@@ -10,6 +10,16 @@ export const AnimationCanvas = () => {
       <OrbitControls />
       <Suspense fallback={null}>
         <Points />
+        <Stars />
+        <Sky />
+        <Cloud
+          opacity={0.6}
+          speed={0.6}
+          width={10}
+          depth={1.5}
+          segments={20}
+          position={[0, 10, 0]}
+        />
       </Suspense>
     </Canvas>
   );
